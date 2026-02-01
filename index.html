@@ -1,11 +1,139 @@
-<html>
-  <head>
-    
-  </head>
-  <header>
-    
-  </header>
-  <body>
-    
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta charset="UTF-8" />
+		<link rel="icon" type="image/png" href="medias/favicon-16x16.png"/>
+		<title>Accueil</title>
+		<link rel="stylesheet" href="styleS.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="script.js" defer></script>
+	</head>
+    <body class="accueilb">
+		<!-- Création du menu de navigation entre les pages du site (présent sur toutes les pages) -->
+		<header>
+            <div class="GAUCHE">
+                <h3>Portfolio</h3>
+            </div>
+			<div class="droite">
+				<nav>
+					<ul id="menu">
+						<li><a class="me" href="#Quisuisj">Plus sur moi</a></li>
+						<li><a class="Compéten" href="#Compétences">Compétences</a></li>
+						<li><a class="Passsion" href="#Idpassions">Passions</a></li>
+						<li><a href="projets.html">Mes projets</a></li>
+						<li><a class="Contact" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<!-- Partie principale du code, présentation du site -->
+			<section class="portfolio">
+				<div class="video">
+					<video id="mavideo" autoplay muted loop playsinline>
+						<source src="medias/ocean3.mp4" type="video/mp4"/>
+					</video>
+				</div>
+				<div class="accueil">
+					<h1>PortfoliO</h1>
+					<h2>Elodie Tougne</h2>
+				</div>
+			</section>
+			<section class="quisuisje">
+					<div class="imgQ">
+						<img src="medias/moi.svg" alt="Photo Elodie Tougne">
+					</div>
+					<div class="texteQ">
+						<h2 id="Quisuisj">Qui suis-je ?</h2>
+						<p>Étudiante en première année de licence professionnelle informatique MI, parcours Applications Web, j’ai suivi auparavant deux années de licence en informatique à Albi, où j’ai découvert que ce qui me plaisait le plus était le web et la création d’interfaces.
+	Créative de nature, j’aime concevoir des sites à la fois esthétiques et fonctionnels, en accordant une attention particulière aux détails visuels et à l’expérience utilisateur. Sérieuse, appliquée et autonome, j’apprends beaucoup par la pratique et je m’investis pleinement dans les projets qui me sont confiés.
+	À travers mes études et mes projets personnels, j’ai développé des bases solides en HTML et CSS, et je continue à renforcer mes compétences dans le domaine du développement web. Ce portfolio reflète mon univers, mon sens de la création et mon envie de progresser dans un métier qui allie technique et créativité.</p>
+						
+					</div>
+			</section>
+			<section class="arrierep">
+				<div class="wave2">
+  					<svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+   						<path d="M0,40 C120,80 240,0 360,20 480,40 600,90 720,60 840,30 960,20 1080,40 1200,60 1320,50 1440,30 L1440,0 L0,0 Z"></path>
+  					</svg>
+				</div>
+				<h2 id="Compétences">Compétences</h2>
+				<section class="competences">
+					<div>
+						<i class="fa fa-code"></i>
+						<p>HTML</p>
+					</div>
+					<div>
+						<i class="fa fa-css3"></i>
+						<p>CSS</p>
+					</div>
+					<div>
+						<i class="fa fa-wordpress"></i>
+						<p>Wordpress</p>
+					</div>
+					<div>
+						<i class="fa fa-github"></i>
+						<p>Github</p>
+					</div>
+				</section>
+				<div class="wave">
+  					<svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+   						<path d="M0,40 C120,80 240,0 360,20 480,40 600,90 720,60 840,30 960,20 1080,40 1200,60 1320,50 1440,30 L1440,0 L0,0 Z"></path>
+  					</svg>
+				</div>
+				<h2 id="Idpassions">Mes passions</h2>
+				<section class="passions">
+					<div class="passion">
+						<img src="medias/broder.jpeg" alt="Broder">
+						<div class="overlay">
+							<p>Broder</p>
+						</div>
+					</div>
+					<div class="passion">
+						<img src="medias/crochet.jpg" alt="Crochet">
+						<div class="overlay">
+							<p>Crochet</p>
+						</div>
+					</div>
+					<div class="passion">
+						<img src="medias/peindre.JPG" alt="Peindre">
+						<div class="overlay">
+							<p>Peindre</p>
+						</div>
+					</div>
+					<div class="passion">
+						<img src="medias/voyager.jpg" alt="Voyager">
+						<div class="overlay">
+							<p>Découvrir le monde</p>
+						</div>
+					</div>
+					<div class="passion">
+						<img src="medias/ongles.jpeg" alt="Manucures">
+						<div class="overlay">
+							<p>Stylisme ongulaire</p>
+						</div>
+    				</div>
+				</section>
+
+			</section>
+			<section class="fact">
+				<div class="facts">
+					<h2>Le saviez-vous ?</h2>
+					<p id="fact">Chargement du fun fact...</p>
+					<button id="newFact">Un autre fun fact</button>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- Pied de page du site avec mes informations de contact (présente sur toutes les pages) -->
+		<footer>
+    		<div class="footer-left">
+       			 <a id="contact" href="mailto:elodie.tougne@etu.unilim.fr" target="_blank">Me contacter</a>
+    		</div>
+    		<div class="footer-right">
+        		<p>&copy; 2025 by Elodie Tougne</p>
+    		</div>
+		</footer>
+	</body>
 </html>
