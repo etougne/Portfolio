@@ -1,0 +1,352 @@
+@font-face {
+    font-family: "MaPolice";
+    src: url("fonts/Sinera.ttf") format("truetype");
+}
+@font-face {
+    font-family: "MaPolice2";
+    src: url("fonts/Summer\ PERSONAL\ USE\ ONLY!.ttf") format("truetype");
+}
+@font-face {
+    font-family: "MaPolice3";
+    src: url("fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+html,body{
+    height: 100%;
+}
+header {
+    background-color:#090132;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.GAUCHE {
+    margin-left: 20px;
+}
+.droite {
+    margin-right: 10px;
+}
+ul {
+    display:flex;
+    justify-content:center;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+ul li a {
+    margin-right: 10px;
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none; 
+    font-family: "MaPolice";
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #0e0e35;
+    color: #ffffff;
+}
+main{
+    margin: 0;
+    padding: 0;
+    flex:1;
+}
+.portfolio {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#mavideo {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.accueil {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(21, 1, 39, 0.5); 
+}
+a:hover {
+    color: #2e3365;
+}
+.accueil h1{
+    font-size: 4.2em;
+    font-family: "MaPolice2";
+}
+h2{
+    font-size: 2.1rem;
+    font-family: "MaPolice";
+    color: #bdcef2;
+    
+}
+.accueil h2{
+    font-size: 2.8rem;
+    font-family: "MaPolice";
+    margin: 0;
+}
+h3{
+    font-family: "MaPolice";
+}
+.quisuisje {
+    margin: 0;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quisuisje img{    
+    border-radius: 50%;
+    object-fit: cover; 
+    float: left ;
+    shape-outside: margin-box;
+    margin : 0 30px 5px 0;
+}
+
+.texteQ{
+    padding:10px;
+    line-height: 33px;
+    padding-right: 20px;
+    font-size: 20px;
+    word-spacing: 2px;
+    text-align: justify;
+    color: #ffffff;
+    font-family: "MaPolice3";
+}
+.wave2 svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+  transform: rotate(180deg);
+}
+
+.wave2 path {
+  fill: #364696; /* couleur de la section compétences */
+}
+#Compétences {
+    display: flex;
+    justify-content: center;
+    font-family: "MaPolice";
+    font-size: 2rem;
+    letter-spacing: 2px;
+    background-color: #364696;
+    margin: 0;
+}
+.competences {
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    width: 100%;
+    height: 220px;
+    background-color: #364696;
+    padding-top: 10px;
+}
+.competences i {
+    font-size: 60px;
+    color: #cfcdf6;
+}
+.competences p {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-family: "MaPolice3";
+    font-size: 1.2rem;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+.wave path {
+  fill: #364696; /* couleur section suivante */
+}
+
+#Idpassions {
+    display: flex;
+    justify-content: center;
+    font-family: "MaPolice";
+    letter-spacing: 2px;
+}
+.passions {
+  display: flex;
+  width: 100%;
+  height: 290px; /* pas trop haut */
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.passion {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.passion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85) saturate(0.9);
+  transition: all 0.4s ease;
+}
+
+/* voile bleu/blanc */
+.passion::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 3, 55, 0.3);
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+/* texte */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(91, 82, 109);
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+}
+
+/* hover */
+.passion:hover img {
+  filter: brightness(0.6) saturate(1);
+}
+
+.passion:hover::before {
+  background: rgba(120, 170, 200, 0.6);
+}
+
+.passion:hover .overlay {
+  opacity: 1;
+}
+
+.mainprojet {
+    background-image: url(medias/fffff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projet-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.projet {
+  position: relative;
+  width: 600px; /* largeur des miniatures */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.projet img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.projet:hover img {
+  transform: scale(1.05); /* léger zoom au survol */
+}
+.h1p h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.7rem;
+    font-family: "MaPolice2";
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 50, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.projet:hover .overlay {
+  opacity: 1;
+}
+.fact {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* espace entre les éléments */
+    text-align: center;
+    padding-bottom: 30px;
+}
+#fact {
+    font-family: 'MaPolice', serif; /* exemple élégant */
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+}
+
+footer {
+    padding: 3px;
+    background-color:#090132;
+    text-align: center;
+}
+
+.footer-left a{
+    display:inline-block;
+    padding: 10px 20px; /* mise en forme du bouton lien */
+    background-color:#d2b6f2;
+    color: #ffffff;
+    text-decoration: none; /* enlever le soulignement du lien */
+    border-radius: 12px; /* arrondir les coins du bouton */
+}
+footer a:hover {
+    background-color: #ffffff; /* changement de couleur lors du survol du bouton */
+    color:#d2b6f2;
+}
